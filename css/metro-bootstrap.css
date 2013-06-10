@@ -1,9 +1,9 @@
-/* move down carets for tabs */
+/* do not edit below this line */
 /*!
- * metro-bootstrap v2.2.3
- *
- * from talkslab based on twitter bootstrap.
+ * Template based on metro-bootstrap v2.2.3 from talkslab based on twitter bootstrap.
  */
+
+
 article,
 aside,
 details,
@@ -201,21 +201,15 @@ textarea {
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #333333;
-  background-color: #ffffff;
+  
 }
-a {
-  color: #2e8bcc;
-  text-decoration: none;
-}
-a:hover {
-  color: #20608e;
-  text-decoration: underline;
-}
+
 .img-rounded {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -5132,7 +5126,7 @@ a.badge:hover {
 }
 @media (max-width: 767px) {
   body {
-    padding-left: 0px;
+    padding-left: -20px;
     padding-right: 10px;
   }
   .navbar-fixed-top,
@@ -5142,7 +5136,7 @@ a.badge:hover {
     margin-right: -20px;
   }
   .container-fluid {
-    padding: 0;
+    padding-left: -10;
   }
   .dl-horizontal dt {
     float: none;
@@ -5910,7 +5904,12 @@ a.badge:hover {
     width: 56px;
   }
   .thumbnails {
-    margin-left: -30px;
+	width: 60%;
+	margin-left: center;
+	margin-right: center;
+	
+	
+
   }
   .thumbnails > li {
     margin-left: 10px;
@@ -5922,7 +5921,9 @@ a.badge:hover {
 @media (max-width: 979px) {
   body {
     padding-top: 0;
-  }
+		
+}
+
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     position: static;
@@ -6065,13 +6066,31 @@ a.badge:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .thumbnails > ul {
+	width: 300px;
+}
+
 }
 @media (min-width: 980px) {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
   }
+
+  .thumbnails > ul {
+	width: 300px;
 }
+}
+
+
+
+
+
+
+
+
+
+
 /*
  * metro-bootstrap files
  */
@@ -6124,7 +6143,7 @@ li {
   text-align: center;
   padding: 0px;
   opacity: 0.9;
-  background-color: #2e8bcc;
+
 }
 .thumbnails > li.tile h1,
 .thumbnails > li.tile h2,
@@ -6202,7 +6221,7 @@ li {
 }
 .thumbnails > li.tile.tile-quad {
   width: 300px;
-  height: 170px;
+  height: 275px;
 }
 .thumbnails > li.tile.tile-micro {
   width: 66px;
@@ -6249,6 +6268,11 @@ li {
 .thumbnails > li.tile.tile-white {
   background-color: #fff;
 }	
+
+.thumbnails > li.tile.tile-gray {
+  background-color: #999;
+}
+
 
 .navbar-inner {
   -webkit-box-shadow: none;
@@ -6694,3 +6718,5 @@ textarea:focus {
   height: 10px;
   border-radius: 100%;
 }
+
+
